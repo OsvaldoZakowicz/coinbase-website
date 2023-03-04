@@ -2,7 +2,7 @@
 
 $primary-color: #000000;
 $secondary-color: #ffffff;
-$alt-color: #0075FF;
+$alt-color: #0075ff;
 
 html {
   font-family: "Inter", sans-serif;
@@ -28,8 +28,29 @@ html {
 }
 
 .login {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 14rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 14rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12.5rem;
+  margin-top: 7.2rem;
+  .section-cta {
+    flex-basis: 26rem;
+  }
+}
+
+.section-cta__text {
+  margin-bottom: 2rem;
+}
+
+.section-cta__contact {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
 }
