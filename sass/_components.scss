@@ -79,3 +79,38 @@
     border-color: rgba($color: globals.$alt-color, $alpha: 0.8);
   }
 }
+
+.feature {
+  width: 22rem;
+  height: auto;
+  display: flex;
+  align-items: start;
+  .feature__icon-wrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* no se comprime */
+    border-radius: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba($color: globals.$primary-color, $alpha: 0.25);
+    i {
+      font-size: 1rem;
+      color: globals.$alt-color;
+    }
+  }
+  .feature__text-wrapper {
+    margin-left: 1.5rem;
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: globals.$primary-color;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba($color: globals.$primary-color, $alpha: 0.6);
+    }
+  }
+}
