@@ -165,3 +165,17 @@
   }
 }
 
+.kpi {
+  display: flex;
+  flex-direction: column;
+  .kpi__number {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4.25rem;
+    text-align: center;
+  }
+  .kpi__text {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+}
