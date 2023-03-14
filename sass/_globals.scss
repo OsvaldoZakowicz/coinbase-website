@@ -121,3 +121,33 @@ html {
   background-color: $alt-color;
   color: $secondary-color;
 }
+
+.onboarding {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  .onboarding__heading {
+    text-align: center;
+    margin-bottom: 8.5rem;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $primary-color;
+    }
+    p {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: rgba($color: $primary-color, $alpha: 0.4);
+    }
+  }
+  .onboarding__steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .step__separator {
+      flex-basis: 8.5rem;
+      flex-shrink: 1;
+      border-top: 1px solid $primary-color;
+    }
+  }
+}

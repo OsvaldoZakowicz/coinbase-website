@@ -179,3 +179,17 @@
     line-height: 1.1rem;
   }
 }
+
+.step {
+  text-align: center;
+  i {
+    font-size: 5rem;
+    color: globals.$alt-color;
+  }
+  .step__text {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: globals.$primary-color;
+  }
+}
