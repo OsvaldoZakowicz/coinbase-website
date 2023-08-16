@@ -5,6 +5,13 @@ $secondary-color: #ffffff;
 $alt-color: #0075ff;
 $alt-bg-color: #f4f7fe;
 
+/* reset de estilos del navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Inter", sans-serif;
 }
@@ -52,8 +59,13 @@ html {
 
 .section-cta__contact {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   column-gap: 1.2rem;
+  /* impedir que el boton cta se comprima */
+  .btn-cta {
+    flex-shrink: 0;
+  }
 }
 
 .features {

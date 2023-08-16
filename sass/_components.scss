@@ -10,6 +10,7 @@
   &:hover {
     text-decoration: underline;
     color: rgba($color: globals.$primary-color, $alpha: 0.4);
+    transition: all 0.5s;
   }
   &:active {
     text-decoration: underline;
@@ -18,10 +19,13 @@
 }
 
 .btn {
+  min-width: 6rem;
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 1rem;
   padding: 0.5rem 1.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
 
 /*all fontawesome icons*/
@@ -35,7 +39,9 @@
   background-color: globals.$alt-color;
   &:hover {
     border: 1px solid globals.$alt-color;
+    color: globals.$alt-color;
     background-color: globals.$secondary-color;
+    transition: all 0.5s;
   }
 }
 
@@ -70,7 +76,7 @@
 }
 
 .input-cta {
-  width: 17rem;
+  width: 100%;
   height: 2.1rem;
   font-weight: 600;
   line-height: 1rem;
