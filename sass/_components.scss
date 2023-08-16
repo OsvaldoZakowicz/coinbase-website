@@ -24,6 +24,11 @@
   padding: 0.5rem 1.5rem;
 }
 
+/*all fontawesome icons*/
+.icon {
+  color: globals.$alt-color;
+}
+
 .btn-cta {
   border: 1px solid globals.$alt-color;
   color: globals.$secondary-color;
@@ -42,8 +47,8 @@
   line-height: 1.2rem;
   letter-spacing: 0.02rem;
   color: globals.$alt-color;
-  i {
-    font-size: 2rem;
+  .link-cta-icon {
+    margin-left: 0.5rem;
   }
 }
 
@@ -95,10 +100,7 @@
     border-radius: 100%;
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba($color: globals.$primary-color, $alpha: 0.25);
-    i {
-      font-size: 1rem;
-      color: globals.$alt-color;
-    }
+    font-size: 1.2rem;
   }
   .feature__text-wrapper {
     margin-left: 1.5rem;
@@ -122,13 +124,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* icon wrapper from benefit */
   .benefit__heading {
     width: 5rem;
     height: 4rem;
-    i {
-      font-size: 5rem;
-      color: globals.$alt-color;
-    }
+    font-size: 5rem;
   }
   .benefit__body {
     width: 100%;
@@ -182,11 +182,9 @@
 
 .step {
   text-align: center;
-  i {
-    font-size: 5rem;
-    color: globals.$alt-color;
-  }
+  font-size: 5rem;
   .step__text {
+    margin-top: 1rem;
     font-size: 1.25rem;
     line-height: 1.25rem;
     font-weight: 600;
