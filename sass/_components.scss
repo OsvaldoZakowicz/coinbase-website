@@ -4,8 +4,8 @@
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 600;
-  line-height: 1rem;
-  letter-spacing: 0.05rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.02rem;
   color: globals.$primary-color;
   &:hover {
     text-decoration: underline;
@@ -71,6 +71,8 @@
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2rem;
+  margin: 1rem 0;
+  line-height: 1.3rem;
   letter-spacing: 0.02rem;
   color: globals.$primary-color;
 }
@@ -113,11 +115,15 @@
     h2 {
       font-size: 1.3rem;
       font-weight: 600;
+      margin-bottom: 1rem;
       color: globals.$primary-color;
     }
     p {
       font-size: 1rem;
       font-weight: 400;
+      margin: 1rem 0;
+      letter-spacing: 0.02rem;
+      line-height: 1.3rem;
       color: rgba($color: globals.$primary-color, $alpha: 0.6);
     }
   }
@@ -148,11 +154,15 @@
     .benefit__title {
       font-size: 1.5rem;
       font-weight: 600;
+      margin: 1rem 0;
       color: globals.$primary-color;
     }
     .benefit__subtitle {
       font-size: 1rem;
       font-weight: 400;
+      margin: 1rem 0;
+      letter-spacing: 0.02rem;
+      line-height: 1.3rem;
       color: rgba($color: globals.$primary-color, $alpha: 0.6);
     }
   }

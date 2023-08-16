@@ -76,11 +76,15 @@ html {
 .features .features__heading h2 {
   font-size: 2.5rem;
   font-weight: 600;
+  margin: 1rem 0;
   color: #000000;
 }
 .features .features__heading p {
   font-size: 1.25rem;
   font-weight: 600;
+  margin: 1rem 0;
+  letter-spacing: 0.02rem;
+  line-height: 1.3rem;
   color: rgba(0, 0, 0, 0.4);
 }
 .features .features__content {
@@ -103,11 +107,15 @@ html {
 .benefits .benefits__heading h2 {
   font-size: 2.5rem;
   font-weight: 600;
+  margin: 1rem 0;
   color: #000000;
 }
 .benefits .benefits__heading p {
   font-size: 1.25rem;
   font-weight: 600;
+  margin: 1rem 0;
+  letter-spacing: 0.02rem;
+  line-height: 1.3rem;
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -141,11 +149,15 @@ html {
 .onboarding .onboarding__heading h2 {
   font-size: 2.5rem;
   font-weight: 600;
+  margin: 1rem 0;
   color: #000000;
 }
 .onboarding .onboarding__heading p {
   font-size: 1.25rem;
   font-weight: 600;
+  margin: 1rem 0;
+  letter-spacing: 0.02rem;
+  line-height: 1.3rem;
   color: rgba(0, 0, 0, 0.4);
 }
 .onboarding .onboarding__steps {
@@ -179,12 +191,15 @@ html {
 .footer .footer-cta h2 {
   font-size: 2.5rem;
   font-weight: 600;
+  margin: 1rem 0;
   color: #000000;
 }
 .footer .footer-cta p {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 2rem 0;
+  letter-spacing: 0.02rem;
+  line-height: 1.3rem;
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -192,8 +207,8 @@ html {
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 600;
-  line-height: 1rem;
-  letter-spacing: 0.05rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.02rem;
   color: #000000;
 }
 .link:hover, .link-cta:hover {
@@ -258,6 +273,8 @@ html {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2rem;
+  margin: 1rem 0;
+  line-height: 1.3rem;
   letter-spacing: 0.02rem;
   color: #000000;
 }
@@ -302,11 +319,15 @@ html {
 .feature .feature__text-wrapper h2 {
   font-size: 1.3rem;
   font-weight: 600;
+  margin-bottom: 1rem;
   color: #000000;
 }
 .feature .feature__text-wrapper p {
   font-size: 1rem;
   font-weight: 400;
+  margin: 1rem 0;
+  letter-spacing: 0.02rem;
+  line-height: 1.3rem;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -337,11 +358,15 @@ html {
 .benefit .benefit__body .benefit__title {
   font-size: 1.5rem;
   font-weight: 600;
+  margin: 1rem 0;
   color: #000000;
 }
 .benefit .benefit__body .benefit__subtitle {
   font-size: 1rem;
   font-weight: 400;
+  margin: 1rem 0;
+  letter-spacing: 0.02rem;
+  line-height: 1.3rem;
   color: rgba(0, 0, 0, 0.6);
 }
 .benefit .benefit__footer {
