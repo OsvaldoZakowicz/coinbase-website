@@ -18,6 +18,20 @@
   }
 }
 
+.menu-icon-open,
+.menu-icon-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: globals.$primary-color;
+  cursor: pointer;
+  &:hover {
+    color: globals.$alt-color;
+    transition: all 0.3s;
+  }
+}
+
 .btn {
   min-width: 6rem;
   font-size: 0.9rem;

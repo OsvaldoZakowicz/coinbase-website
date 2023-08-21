@@ -16,6 +16,9 @@
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/d0cceff341.js" crossorigin="anonymous"></script>
   
+  <!-- alpine -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+
   <!-- styles css from scss -->
   <link rel="stylesheet" href="./css/styles.css" />
 
@@ -23,11 +26,14 @@
 </head>
 
 <body>
-  <nav class="navigation">
+  <!-- apartado de navegacion -->
+  <nav x-data="{ open: false }" class="navigation">
+    <!-- logo del sitio web -->
     <div class="logo-wrapper">
       <img src="./assets/coinbase-logo1.png" alt="logo de coinbase" />
     </div>
-    <ul class="links-menu">
+    <!-- menu de enlaces -->
+    <ul x-show="open" class="links-menu">
       <li><a class="link" href="#">Price</a></li>
       <li><a class="link" href="#">Learn</a></li>
       <li><a class="link" href="#">Individual</a></li>
@@ -35,9 +41,25 @@
       <li><a class="link" href="#">Developer</a></li>
       <li><a class="link" href="#">Company</a></li>
     </ul>
-    <div class="login">
+    <!-- botones de sesion -->
+    <div x-show="open" class="login">
       <a class="link" href="#">Sign in</a>
       <button class="btn btn-cta">Get started</button>
+    </div>
+    <!-- contenedor de botones abrir/cerrar menu -->
+    <div class="menu-icons-wrapper">
+      <!-- boton abrir menu
+        - abre el menu, y se oculta a si mismo
+      -->
+      <div x-on:click="open = true" x-show="!open" class="menu-icon-open">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- boton cerrar menu
+        - cierra el menu y se oculta a si mismo
+      -->
+      <div x-on:click="open = false" x-show="open" class="menu-icon-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
     </div>
   </nav>
   <main class="home">
