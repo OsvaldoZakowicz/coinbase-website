@@ -21,6 +21,11 @@ html {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+/* contenedor de botones abrir/cerrar menu */
+.menu-icons-wrapper {
+  order: 1;
+}
+
 /* menu de enlaces */
 .links-menu {
   display: flex;
@@ -47,31 +52,40 @@ html {
   order: 3;
 }
 
-.menu-icons-wrapper {
-  order: 1;
-}
-
+/* apartado principal */
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   column-gap: 12.5rem;
-  margin-top: 7.2rem;
+  margin-top: 5.2rem;
 }
 .home .section-cta {
   flex-basis: 26rem;
+  padding: 1rem;
+}
+.home .image-home-wrapper {
+  margin-top: 2rem;
 }
 
 .section-cta__text {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .section-cta__contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  column-gap: 1.2rem;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  /* impedir que el input se comprima */
   /* impedir que el boton cta se comprima */
+}
+.section-cta__contact .input-cta {
+  flex-basis: 100%;
+  flex-shrink: 0;
 }
 .section-cta__contact .btn-cta {
   flex-shrink: 0;
@@ -281,6 +295,7 @@ html {
 .link-cta {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0.02rem;
@@ -291,9 +306,9 @@ html {
 }
 
 .title-cta {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 600;
-  line-height: 4.5rem;
+  line-height: 4rem;
   margin: 1rem 0;
   letter-spacing: 0.02rem;
   color: #000000;

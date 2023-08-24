@@ -57,26 +57,39 @@ html {
   order: 3;
 }
 
+/* apartado principal */
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   column-gap: 12.5rem;
-  margin-top: 7.2rem;
+  margin-top: 5.2rem;
   .section-cta {
     flex-basis: 26rem;
+    padding: 1rem;
+  }
+  .image-home-wrapper {
+    margin-top: 2rem;
   }
 }
 
 .section-cta__text {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .section-cta__contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  column-gap: 1.2rem;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  /* impedir que el input se comprima */
+  .input-cta {
+    flex-basis: 100%;
+    flex-shrink: 0;
+  }
   /* impedir que el boton cta se comprima */
   .btn-cta {
     flex-shrink: 0;

@@ -63,6 +63,7 @@
   @extend .link;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0.02rem;
@@ -73,9 +74,9 @@
 }
 
 .title-cta {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 600;
-  line-height: 4.5rem;
+  line-height: 4rem;
   margin: 1rem 0;
   letter-spacing: 0.02rem;
   color: globals.$primary-color;
