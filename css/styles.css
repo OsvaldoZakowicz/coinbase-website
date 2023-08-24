@@ -91,16 +91,18 @@ html {
   flex-shrink: 0;
 }
 
+/* seccion fatures */
 .features {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 7.2rem;
+  margin-top: 5.2rem;
 }
 .features .features__heading {
   text-align: center;
-  margin-bottom: 2.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 .features .features__heading h2 {
   font-size: 2.5rem;
@@ -118,10 +120,12 @@ html {
 }
 .features .features__content {
   display: flex;
-  column-gap: 2.5rem;
 }
 .features .features__content .features__wrapper {
   margin-top: 2rem;
+}
+.features .features__content .features__image-wrapper {
+  display: none;
 }
 
 .benefits {
@@ -340,11 +344,14 @@ html {
   border-color: rgba(0, 117, 255, 0.8);
 }
 
+/* feature individual */
 .feature {
-  width: 22rem;
+  flex-basis: 22rem;
   height: auto;
   display: flex;
   align-items: start;
+  flex-shrink: 1;
+  padding: 1rem;
 }
 .feature .feature__icon-wrapper {
   width: 40px;
@@ -359,7 +366,7 @@ html {
   font-size: 1.2rem;
 }
 .feature .feature__text-wrapper {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 .feature .feature__text-wrapper h2 {
   font-size: 1.3rem;
