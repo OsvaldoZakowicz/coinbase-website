@@ -133,12 +133,14 @@ html {
   }
 }
 
+/* seccion beneficios */
 .benefits {
   margin-top: 3.2rem;
   padding-top: 4rem;
   border-top: 1px solid rgba($color: $primary-color, $alpha: 0.1);
   .benefits__heading {
     text-align: center;
+    padding: 1rem;
     margin-bottom: 6rem;
     h2 {
       font-size: 2.5rem;
@@ -159,9 +161,10 @@ html {
 
 .benefits__wrapper {
   display: flex;
-  column-gap: 3rem;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 4rem;
 }
 
 .kpis {

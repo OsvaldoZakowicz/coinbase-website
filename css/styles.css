@@ -128,6 +128,7 @@ html {
   display: none;
 }
 
+/* seccion beneficios */
 .benefits {
   margin-top: 3.2rem;
   padding-top: 4rem;
@@ -135,6 +136,7 @@ html {
 }
 .benefits .benefits__heading {
   text-align: center;
+  padding: 1rem;
   margin-bottom: 6rem;
 }
 .benefits .benefits__heading h2 {
@@ -154,9 +156,10 @@ html {
 
 .benefits__wrapper {
   display: flex;
-  column-gap: 3rem;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 4rem;
 }
 
 .kpis {
@@ -385,7 +388,8 @@ html {
 
 .benefit {
   width: 21.3rem;
-  height: 21rem;
+  height: auto;
+  max-height: 21rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -393,30 +397,28 @@ html {
   /* icon wrapper from benefit */
 }
 .benefit .benefit__heading {
-  width: 5rem;
-  height: 4rem;
   font-size: 5rem;
 }
 .benefit .benefit__body {
   width: 100%;
-  height: 60%;
-  margin-top: 4rem;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   text-align: center;
+  padding: 0.5rem 1rem;
 }
 .benefit .benefit__body .benefit__title {
   font-size: 1.5rem;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   color: #000000;
 }
 .benefit .benefit__body .benefit__subtitle {
   font-size: 1rem;
   font-weight: 400;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   letter-spacing: 0.02rem;
   line-height: 1.3rem;
   color: rgba(0, 0, 0, 0.6);
@@ -427,6 +429,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0.5rem 1rem;
 }
 .benefit .benefit__footer .benefit__link {
   font-size: 1rem;
