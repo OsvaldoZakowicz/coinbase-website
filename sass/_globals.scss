@@ -187,7 +187,8 @@ html {
   margin-top: 5rem;
   .onboarding__heading {
     text-align: center;
-    margin-bottom: 8.5rem;
+    padding: 1rem;
+    margin-bottom: 5.5rem;
     h2 {
       font-size: 2.5rem;
       font-weight: 600;
@@ -205,12 +206,14 @@ html {
   }
   .onboarding__steps {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     .step__separator {
       flex-basis: 8.5rem;
       flex-shrink: 1;
-      border-top: 1px solid $primary-color;
+      margin: 0.5rem;
+      border-left: 1px solid $primary-color;
     }
   }
 }
