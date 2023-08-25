@@ -185,6 +185,49 @@ html {
   margin: 2rem 1rem;
 }
 
+/* media queries */
+/* ancho >= 480px */
+@media screen and (min-width: 480px) {
+  .section-cta__contact {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .section-cta__contact .input-cta {
+    flex-basis: 65%;
+    flex-shrink: 1;
+  }
+  .section-cta__contact .btn-cta {
+    flex-shrink: 1;
+  }
+}
+/* ancho >= 600px */
+@media screen and (min-width: 600px) {
+  .onboarding .onboarding__steps {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .footer {
+    height: 30rem;
+  }
+}
+/* ancho >= 900px */
+@media screen and (min-width: 900px) {
+  .section-cta__text {
+    text-align: left;
+  }
+  .features .features__content .features__image-wrapper {
+    display: block;
+  }
+  .onboarding .onboarding__steps {
+    max-width: 55rem;
+  }
+  .footer .footer-cta {
+    max-width: 32rem;
+    padding: 1rem;
+    margin: 5rem auto 9rem 9rem;
+  }
+}
 .link, .link-cta {
   text-decoration: none;
   font-size: 0.8rem;
@@ -409,33 +452,55 @@ html {
   margin: 2rem;
 }
 .kpi .kpi__number {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 4.25rem;
   text-align: center;
 }
 .kpi .kpi__text {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.1rem;
 }
 
 .step {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
+  padding: 1rem;
 }
 .step .step__text {
   margin-top: 1rem;
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   line-height: 1.25rem;
   font-weight: 600;
   color: #000000;
 }
 
 .step__separator {
-  flex-basis: 8.5rem;
+  flex-basis: 5.5rem;
   flex-shrink: 1;
   margin: 0.5rem;
   border-left: 1px solid #000000;
+}
+
+/* media queries sobre componentes */
+/* ancho >= 600px */
+@media screen and (min-width: 600px) {
+  .kpi {
+    margin: 0;
+  }
+  .step__separator {
+    flex-basis: 3rem;
+    flex-shrink: 0;
+    flex-grow: 1;
+    margin: 0;
+    border-top: 1px solid #000000;
+  }
+}
+/* ancho >= 900 px */
+@media screen and (min-width: 900px) {
+  .link-cta {
+    justify-content: start;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
