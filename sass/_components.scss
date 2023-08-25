@@ -128,11 +128,11 @@
 
 /* feature individual */
 .feature {
-  flex-basis: 22rem;
+  max-width: 21rem;
+  min-width: 19rem;
   height: auto;
   display: flex;
   align-items: start;
-  flex-shrink: 1;
   padding: 1rem;
   .feature__icon-wrapper {
     width: 40px;
@@ -166,13 +166,14 @@
 }
 
 .benefit {
-  width: 21.3rem;
+  max-width: 21rem;
+  min-width: 19rem;
   height: auto;
-  max-height: 21rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
   /* icon wrapper from benefit */
   .benefit__heading {
     font-size: 5rem;
