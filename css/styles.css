@@ -104,20 +104,6 @@ html {
   padding: 1rem;
   margin-bottom: 1rem;
 }
-.features .features__heading h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  color: #000000;
-}
-.features .features__heading p {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  letter-spacing: 0.02rem;
-  line-height: 1.3rem;
-  color: rgba(0, 0, 0, 0.4);
-}
 .features .features__content {
   display: flex;
 }
@@ -130,36 +116,22 @@ html {
 
 /* seccion beneficios */
 .benefits {
-  margin-top: 3.2rem;
+  margin-top: 5.2rem;
   padding-top: 4rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .benefits .benefits__heading {
   text-align: center;
   padding: 1rem;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 }
-.benefits .benefits__heading h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  color: #000000;
-}
-.benefits .benefits__heading p {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  letter-spacing: 0.02rem;
-  line-height: 1.3rem;
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.benefits__wrapper {
+.benefits .benefits__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  margin-top: 3rem;
 }
 
 /* seccion kpis */
@@ -167,7 +139,7 @@ html {
   width: 100%;
   height: auto;
   min-height: 13rem;
-  margin-top: 7.2rem;
+  margin-top: 5.2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -179,38 +151,19 @@ html {
 .onboarding {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 5.2rem;
 }
 .onboarding .onboarding__heading {
   text-align: center;
   padding: 1rem;
-  margin-bottom: 5.5rem;
-}
-.onboarding .onboarding__heading h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  color: #000000;
-}
-.onboarding .onboarding__heading p {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  letter-spacing: 0.02rem;
-  line-height: 1.3rem;
-  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
 }
 .onboarding .onboarding__steps {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.onboarding .onboarding__steps .step__separator {
-  flex-basis: 8.5rem;
-  flex-shrink: 1;
-  margin: 0.5rem;
-  border-left: 1px solid #000000;
+  margin-top: 3rem;
 }
 
 .footer {
@@ -219,7 +172,7 @@ html {
   display: flex;
   justify-content: start;
   align-items: flex-end;
-  margin-top: 5.5rem;
+  margin-top: 5.2rem;
   background-color: #f4f7fe;
   background-image: url(../assets/coinbase-bg1.svg);
   background-repeat: no-repeat;
@@ -230,20 +183,6 @@ html {
   width: 100%;
   padding: 1rem;
   margin: 2rem 1rem;
-}
-.footer .footer-cta h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  color: #000000;
-}
-.footer .footer-cta p {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 2rem 0;
-  letter-spacing: 0.02rem;
-  line-height: 1.3rem;
-  color: rgba(0, 0, 0, 0.4);
 }
 
 .link, .link-cta {
@@ -352,6 +291,24 @@ html {
 .input-cta:focus-visible {
   outline: none;
   border-color: rgba(0, 117, 255, 0.8);
+}
+
+/* titulos h2 */
+.title-two {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #000000;
+}
+
+/* parrafos p */
+.text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  letter-spacing: 0.02rem;
+  line-height: 1.3rem;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 /* feature individual */
@@ -471,6 +428,13 @@ html {
   line-height: 1.25rem;
   font-weight: 600;
   color: #000000;
+}
+
+.step__separator {
+  flex-basis: 8.5rem;
+  flex-shrink: 1;
+  margin: 0.5rem;
+  border-left: 1px solid #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */

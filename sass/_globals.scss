@@ -107,20 +107,6 @@ html {
     text-align: center;
     padding: 1rem;
     margin-bottom: 1rem;
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin: 1rem 0;
-      color: $primary-color;
-    }
-    p {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin: 1rem 0;
-      letter-spacing: 0.02rem;
-      line-height: 1.3rem;
-      color: rgba($color: $primary-color, $alpha: 0.4);
-    }
   }
   .features__content {
     display: flex;
@@ -135,36 +121,22 @@ html {
 
 /* seccion beneficios */
 .benefits {
-  margin-top: 3.2rem;
+  margin-top: 5.2rem;
   padding-top: 4rem;
   border-top: 1px solid rgba($color: $primary-color, $alpha: 0.1);
   .benefits__heading {
     text-align: center;
     padding: 1rem;
-    margin-bottom: 6rem;
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin: 1rem 0;
-      color: $primary-color;
-    }
-    p {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin: 1rem 0;
-      letter-spacing: 0.02rem;
-      line-height: 1.3rem;
-      color: rgba($color: $primary-color, $alpha: 0.4);
-    }
+    margin-bottom: 1rem;
   }
-}
-
-.benefits__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
+  .benefits__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
 }
 
 /* seccion kpis */
@@ -172,7 +144,7 @@ html {
   width: 100%;
   height: auto;
   min-height: 13rem;
-  margin-top: 7.2rem;
+  margin-top: 5.2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -184,37 +156,18 @@ html {
 .onboarding {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 5.2rem;
   .onboarding__heading {
     text-align: center;
     padding: 1rem;
-    margin-bottom: 5.5rem;
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin: 1rem 0;
-      color: $primary-color;
-    }
-    p {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin: 1rem 0;
-      letter-spacing: 0.02rem;
-      line-height: 1.3rem;
-      color: rgba($color: $primary-color, $alpha: 0.4);
-    }
+    margin-bottom: 1rem;
   }
   .onboarding__steps {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .step__separator {
-      flex-basis: 8.5rem;
-      flex-shrink: 1;
-      margin: 0.5rem;
-      border-left: 1px solid $primary-color;
-    }
+    margin-top: 3rem;
   }
 }
 
@@ -224,7 +177,7 @@ html {
   display: flex;
   justify-content: start;
   align-items: flex-end;
-  margin-top: 5.5rem;
+  margin-top: 5.2rem;
   background-color: $alt-bg-color;
   background-image: url(../assets/coinbase-bg1.svg);
   background-repeat: no-repeat;
@@ -234,19 +187,5 @@ html {
     width: 100%;
     padding: 1rem;
     margin: 2rem 1rem;
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin: 1rem 0;
-      color: $primary-color;
-    }
-    p {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin: 2rem 0;
-      letter-spacing: 0.02rem;
-      line-height: 1.3rem;
-      color: rgba($color: $primary-color, $alpha: 0.4);
-    }
   }
 }

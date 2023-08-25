@@ -108,6 +108,24 @@
   }
 }
 
+/* titulos h2 */
+.title-two {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: globals.$primary-color;
+}
+
+/* parrafos p */
+.text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  letter-spacing: 0.02rem;
+  line-height: 1.3rem;
+  color: rgba($color: globals.$primary-color, $alpha: 0.4);
+}
+
 /* feature individual */
 .feature {
   flex-basis: 22rem;
@@ -225,4 +243,11 @@
     font-weight: 600;
     color: globals.$primary-color;
   }
+}
+
+.step__separator {
+  flex-basis: 8.5rem;
+  flex-shrink: 1;
+  margin: 0.5rem;
+  border-left: 1px solid globals.$primary-color;
 }
