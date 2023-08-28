@@ -9,16 +9,25 @@ html {
   font-family: "Inter", sans-serif;
 }
 
-/* apartado de navegacion */
+/* apartados de navegacion */
 .navigation {
   width: 100%;
   min-height: 4rem; /* 64px */
-  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* apartado de navegacion rsponsive */
+.navigation-responsive {
+  display: flex;
+}
+
+/* apartado de navegacion desktop */
+.navigation-desktop {
+  display: none;
 }
 
 /* contenedor de botones abrir/cerrar menu */
@@ -33,10 +42,13 @@ html {
   gap: 1.3rem;
   flex-basis: 100%;
   flex-shrink: 0;
-  list-style: square;
-  margin: 0;
-  padding: 1rem;
   order: 2;
+  margin: 1rem 0 0 0;
+  padding: 2rem 1rem;
+  list-style: none;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  background-color: #f4f7fe;
 }
 
 /* botones de sesion */
@@ -46,10 +58,12 @@ html {
   align-items: center;
   flex-basis: 100%;
   flex-shrink: 0;
-  /* width: 14rem; */
-  padding: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
   order: 3;
+  padding: 1rem;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  background-color: #f4f7fe;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* apartado principal */
@@ -202,6 +216,12 @@ html {
 }
 /* ancho >= 600px */
 @media screen and (min-width: 600px) {
+  /* menu de enlaces */
+  /* para ubicar los enlaces horizontalmente y agregar espacio */
+  .links-menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .onboarding .onboarding__steps {
     flex-direction: row;
     justify-content: space-evenly;
@@ -226,6 +246,38 @@ html {
     max-width: 32rem;
     padding: 1rem;
     margin: 5rem auto 9rem 9rem;
+  }
+}
+/* ancho >= 1024px */
+@media screen and (min-width: 1024px) {
+  /* a partir de 1200px, se intercambia el menu responsive
+  por un menu desktop */
+  .navigation {
+    display: none;
+  }
+  .navigation-desktop {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+  /* menu de enlaces */
+  .links-menu {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  /* botones de sesion */
+  .login {
+    flex-basis: 14rem;
+    flex-grow: 0;
+    padding: 0;
+    background-color: #ffffff;
+    border: none;
   }
 }
 .link, .link-cta {

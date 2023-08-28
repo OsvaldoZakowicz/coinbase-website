@@ -26,8 +26,8 @@
 </head>
 
 <body>
-  <!-- apartado de navegacion -->
-  <nav x-data="{ open: false }" class="navigation">
+  <!-- apartado de navegacion responsive -->
+  <nav x-data="{ open: false }" class="navigation navigation-responsive">
     <!-- logo del sitio web -->
     <div class="logo-wrapper">
       <img src="./assets/coinbase-logo1.png" alt="logo de coinbase" />
@@ -60,6 +60,27 @@
       <div x-on:click="open = false" x-show="open" class="menu-icon-close">
         <i class="fa-solid fa-xmark"></i>
       </div>
+    </div>
+  </nav>
+  <!-- apartado de navegacion desktop -->
+  <nav class="navigation navigation-desktop">
+    <!-- logo del sitio web -->
+    <div class="logo-wrapper">
+      <img src="./assets/coinbase-logo1.png" alt="logo de coinbase" />
+    </div>
+    <!-- menu de enlaces -->
+    <ul class="links-menu">
+      <li><a class="link" href="#">Price</a></li>
+      <li><a class="link" href="#">Learn</a></li>
+      <li><a class="link" href="#">Individual</a></li>
+      <li><a class="link" href="#">Business</a></li>
+      <li><a class="link" href="#">Developer</a></li>
+      <li><a class="link" href="#">Company</a></li>
+    </ul>
+    <!-- botones de sesion -->
+    <div class="login">
+      <a class="link" href="#">Sign in</a>
+      <button class="btn btn-cta">Get started</button>
     </div>
   </nav>
   <!-- apartado principal -->
