@@ -259,6 +259,8 @@
 /* ancho >= 600px */
 @media screen and (min-width: 600px) {
   
+  /* kip individual */
+  /* para quitar margenes */
   .kpi {
     margin: 0;
   }
@@ -280,6 +282,17 @@
   /* para alinear el contenido a la izquierda (en flex) */
   .link-cta {
     justify-content: start;
+  }
+
+}
+
+/* ancho >= 1024px */
+@media screen and (min-width: 1024px) {
+
+  /* kpi individual */
+  /* para establecer margenes (debido al centrado a partir de 1024px)*/
+  .kpi {
+    margin: 0 5rem;
   }
 
 }

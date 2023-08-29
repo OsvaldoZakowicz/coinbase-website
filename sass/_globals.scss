@@ -174,6 +174,8 @@ html {
 .onboarding {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 5.2rem;
   .onboarding__heading {
     text-align: center;
@@ -185,6 +187,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     margin-top: 3rem;
   }
 }
@@ -240,10 +243,14 @@ html {
     justify-content: space-between;
   }
 
-  .onboarding .onboarding__steps {
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 1rem;
+  /* apartado onboarding, contenedor de pasos onboarding */
+  /* para cambiar de vertical a horizontal */
+  .onboarding {
+    .onboarding__steps {
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 1rem;
+    }
   }
 
   .footer {
@@ -271,8 +278,12 @@ html {
     }
   }
 
-  .onboarding .onboarding__steps {
-    max-width: 55rem;
+  /* apartado onboarding, contenedor de pasos onboarding */
+  /* para limitar ancho maximo */
+  .onboarding {
+    .onboarding__steps {
+      max-width: 70%;
+    }
   }
 
   .footer {
@@ -318,6 +329,13 @@ html {
     padding: 0;
     background-color: $secondary-color;
     border: none;
+  }
+
+  /* seccion kpis */
+  /* para centrar a partir de los 1024px */
+  /* ver .kpi individual en media screen >= 1024px */
+  .kpis {
+    justify-content: center;
   }
 
 }

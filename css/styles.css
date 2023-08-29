@@ -169,6 +169,8 @@ html {
 .onboarding {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 5.2rem;
 }
 .onboarding .onboarding__heading {
@@ -181,6 +183,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin-top: 3rem;
 }
 
@@ -228,6 +231,8 @@ html {
     flex-direction: row;
     justify-content: space-between;
   }
+  /* apartado onboarding, contenedor de pasos onboarding */
+  /* para cambiar de vertical a horizontal */
   .onboarding .onboarding__steps {
     flex-direction: row;
     justify-content: space-evenly;
@@ -249,8 +254,10 @@ html {
   .features .features__content .features__image-wrapper {
     display: block;
   }
+  /* apartado onboarding, contenedor de pasos onboarding */
+  /* para limitar ancho maximo */
   .onboarding .onboarding__steps {
-    max-width: 55rem;
+    max-width: 70%;
   }
   .footer .footer-cta {
     max-width: 32rem;
@@ -288,6 +295,12 @@ html {
     padding: 0;
     background-color: #ffffff;
     border: none;
+  }
+  /* seccion kpis */
+  /* para centrar a partir de los 1024px */
+  /* ver .kpi individual en media screen >= 1024px */
+  .kpis {
+    justify-content: center;
   }
 }
 .link, .link-cta {
@@ -547,6 +560,8 @@ html {
 /* media queries sobre componentes */
 /* ancho >= 600px */
 @media screen and (min-width: 600px) {
+  /* kip individual */
+  /* para quitar margenes */
   .kpi {
     margin: 0;
   }
@@ -564,6 +579,14 @@ html {
   /* para alinear el contenido a la izquierda (en flex) */
   .link-cta {
     justify-content: start;
+  }
+}
+/* ancho >= 1024px */
+@media screen and (min-width: 1024px) {
+  /* kpi individual */
+  /* para establecer margenes (debido al centrado a partir de 1024px)*/
+  .kpi {
+    margin: 0 5rem;
   }
 }
 
