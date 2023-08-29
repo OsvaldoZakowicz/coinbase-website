@@ -276,6 +276,8 @@
 /* ancho >= 900 px */
 @media screen and (min-width: 900px) {
 
+  /* enlace superior del texto cta */
+  /* para alinear el contenido a la izquierda (en flex) */
   .link-cta {
     justify-content: start;
   }
