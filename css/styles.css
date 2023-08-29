@@ -109,7 +109,7 @@ html {
   flex-shrink: 0;
 }
 
-/* seccion fatures */
+/* seccion features */
 .features {
   display: flex;
   flex-direction: column;
@@ -244,6 +244,8 @@ html {
   .section-cta__text {
     text-align: left;
   }
+  /* apartado features */
+  /* para mostrar la imagen lateral derecha */
   .features .features__content .features__image-wrapper {
     display: block;
   }
