@@ -238,6 +238,8 @@ html {
     justify-content: space-evenly;
     padding: 1rem;
   }
+  /* seccion footer */
+  /* para establecer el alto */
   .footer {
     height: 30rem;
   }
@@ -259,6 +261,8 @@ html {
   .onboarding .onboarding__steps {
     max-width: 70%;
   }
+  /* seccion footer */
+  /* para alinear texto */
   .footer .footer-cta {
     max-width: 32rem;
     padding: 1rem;
